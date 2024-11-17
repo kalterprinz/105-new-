@@ -181,7 +181,7 @@ elif step == "Model Comparison":
 
         # Subset the training data for faster tuning (e.g., 20% of the original training data)
         from sklearn.model_selection import train_test_split
-        X_sample, _, y_sample, _ = train_test_split(X_train, y_train, test_size=0.95, random_state=42)
+        X_sample, _, y_sample, _ = train_test_split(X_train, y_train, test_size=0.8, random_state=42)
 
         # Dropdown to select the model for hyperparameter tuning
         model_options = {
